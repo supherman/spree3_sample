@@ -2,6 +2,14 @@ box: wercker/ruby
 build:
     steps:
         - bundle-install
+        - rails-database-yml
+        - script:
+            name: db setup
+            code: RAILS_ENV=test bundle exec rake db:schema:load
         - script:
             name: rake
             code: bundle exec rake
+deploy:
+    steps:
+        - heroku-deploy:
+            key-name: DEPLOY_KEY
