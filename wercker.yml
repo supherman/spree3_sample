@@ -16,5 +16,5 @@ build:
 deploy:
     steps:
         - heroku-deploy:
-            key-name: heroku
+            key-name: HEROKU
             app-name: spree3sample
