@@ -17,3 +17,4 @@ deploy:
     steps:
         - heroku-deploy:
             key-name: DEPLOY_KEY
+            app-name: spree3sample
