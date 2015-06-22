@@ -29,14 +29,6 @@ GIT
       spree_core (~> 3.0.0)
 
 GIT
-  remote: git://github.com/supherman/spree_unique_promotions.git
-  revision: 6a8e8a52aebceec4b6e2896c93dac708fd2aca12
-  branch: 3-0-stable
-  specs:
-    spree_unique_promotions (3.0.1)
-      spree_core (~> 3.0.1)
-
-GIT
   remote: https://github.com/spree/spree.git
   revision: 7ef233e069105268bf216f043ea8cd65fff103cb
   branch: 3-0-stable
@@ -393,7 +385,6 @@ DEPENDENCIES
   spree!
   spree_auth_devise!
   spree_gateway!
-  spree_unique_promotions!
   spree_wombat!
   spring
   therubyracer
